@@ -5,7 +5,7 @@ const EditEventsPage = () => {
   const data = useRouteLoaderData('event-detail');
   const event = data.event;
 
-  return <EventForm event={event}/>
+  return <EventForm method='patch' event={event}/>
 }
 
 export default EditEventsPage;
